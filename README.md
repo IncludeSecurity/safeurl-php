@@ -33,7 +33,7 @@ Options such as white and black lists can be modified. For example:
 //Create an Options object
 $options = new Options();
 //Works with regex
-$options->addToList('blacklist', 'domain', '(.*)\.evil\.com');
+$options->addToList('blacklist', 'domain', '([\w\.\-]+\.)?evil.com');
 $options->addToList('whitelist', 'scheme', 'ftp');
 
 //This will now throw an InvalidDomainException
