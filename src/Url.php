@@ -49,7 +49,7 @@ class Url {
         $parts['ips'] = self::resolveHostname($parts['host']);
 
         //Validate the host
-        $parts['host'] = self::validateHostname($parts['host'], $parts['ips'], $options);
+        $parts['host'] = self::validateHostname(rtrim($parts['host'], "."), $parts['ips'], $options);
         if ($options->getPinDns()) {
             //Since we're pinning DNS, we replace the host in the URL
             //with an IP, then get cURL to send the Host header
