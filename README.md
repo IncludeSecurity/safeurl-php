@@ -1,4 +1,7 @@
 # SafeURL for PHP
+
+**Note: The SafeURL libraries are no longer maintained and we recommend considering other SSRF mitigation approaches alongside application-layer SSRF protection libraries. See our [2023 blog post](https://blog.includesecurity.com/2023/03/mitigating-ssrf-in-2023/) for more details.**
+
 ### Originally contributed by Jack Whitton [@fin1te](http://github.com/fin1te)
 
 ## Overview
